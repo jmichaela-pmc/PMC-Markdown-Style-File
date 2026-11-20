@@ -1,37 +1,54 @@
-/* Text surrounded by a single asterisk: *text* */
-em {
-  color: #d56b8e; /* Pick any color you like (e.g., coral red) */
-  font-style: italic; /* Keeps it italic, or set to 'normal' if you only want the color */
-}
 
-/* Text surrounded by double asterisks: **text** */
-strong {
-  color: #6071f4; /* Pick any color you like (e.g., bright blue) */
-  font-weight: bold; /* Keeps it bold, or set to 'normal' if you only want the color */
-}
+/* ==========================================================
+   ITALIC TEXT — *text*
+   ========================================================== */
 
-/* Optional: Handles nested cases like ***bold and italic*** */
-strong em,
-em strong {
-  color: #6071f4; /* Green for both combined */
+em,
+h1 em, h2 em, h3 em,
+h4 em, h5 em, h6 em {
+  color: #d56b8e !important;
+  font-style: italic;
 }
 
 /* ==========================================================
-   HEADINGS SECTION
+   BOLD TEXT — **text**
    ========================================================== */
 
-/* Option A: One shared color for all headings (H1 to H6) */
-h1, h2, h3, h4, h5, h6 {
-  color: #ff9f43; /* Warm amber / coral — change to your liking */
-  border-bottom-color: rgba(255, 159, 67, 0.2); /* Colors the subtle underline under h1/h2 */
+strong,
+h1 strong, h2 strong, h3 strong,
+h4 strong, h5 strong, h6 strong {
+  color: #6071f4 !important;
+  font-weight: bold;
 }
 
-/* Option B: Individual colors per level (uncomment or adjust as needed) */
+/* ==========================================================
+   BOLD + ITALIC — ***text***
+   ========================================================== */
+
+strong em,
+em strong,
+h1 strong em, h2 strong em, h3 strong em,
+h4 strong em, h5 strong em, h6 strong em,
+h1 em strong, h2 em strong, h3 em strong,
+h4 em strong, h5 em strong, h6 em strong {
+  color: #6071f4 !important;
+}
+
+/* ==========================================================
+   HEADINGS — H1 TO H6
+   ========================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff9f43;
+  border-bottom-color: rgba(255, 159, 67, 0.2);
+}
+
+/* Optional: Individual heading colors */
 /*
-h1 { color: #ff6b6b; } 
-h2 { color: #feca57; } 
-h3 { color: #48dbfb; } 
-h4 { color: #1dd1a1; } 
-h5 { color: #5f27cd; } 
-h6 { color: #8395a7; } 
+h1 { color: #ff6b6b; }
+h2 { color: #feca57; }
+h3 { color: #48dbfb; }
+h4 { color: #1dd1a1; }
+h5 { color: #5f27cd; }
+h6 { color: #8395a7; }
 */
